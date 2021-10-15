@@ -1,0 +1,123 @@
+
+html {
+  background: url(../../assets/images/PF_char1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  display: block;
+  height: 1080px;
+  width: 1920px;
+	margin: auto;
+	overflow: hidden;
+}
+.block {
+  position: absolute;
+  z-index: 100;
+}
+.bg {
+  position: absolute;
+  z-index: 200;
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  top: 0;
+  left: 5%;
+  background:rgba(0,0,0,0.0);
+  opacity: 0;
+  -webkit-animation: appear 20s linear infinite;
+          animation: appear 20s linear infinite;
+}
+.i2 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.i3 {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.i4 {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+@-webkit-keyframes appear {
+  10% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0;
+    background-position: right;
+    zoom: 105%;
+  }
+}
+@keyframes appear {
+  10% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0;
+    background-position: right;
+    zoom: 105%;
+  }
+}
+.n1 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(168,23,51,.15);
+  -webkit-animation: horizantal 7.5s linear infinite;
+          animation: horizantal 7.5s linear infinite;
+}
+.n2 {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(27,191,157,.15);
+  -webkit-animation: vertical 7.5s linear infinite;
+          animation: vertical 7.5s linear infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.n3 {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(233,177,100,.15);
+  -webkit-animation: horizantal 7.5s linear infinite;
+          animation: horizantal 7.5s linear infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.n4 {
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(13,36,80,.15);
+  -webkit-animation: vertical 7.5s linear infinite;
+          animation: vertical 7.5s linear infinite;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+@-webkit-keyframes horizantal {
+  0% { width: 0 }
+  50% { width: 100% }
+  100% { width: 0 }
+}
+@keyframes horizantal {
+  0% { width: 0 }
+  50% { width: 100% }
+  100% { width: 0 }
+}
+@-webkit-keyframes vertical {
+  0% { height: 0 }
+  50% { height: 100% }
+  100% { height: 0 }
+}
+@keyframes vertical {
+  0% { height: 0 }
+  50% { height: 100% }
+  100% { height: 0 }
+}
